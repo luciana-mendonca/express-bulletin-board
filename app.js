@@ -5,8 +5,13 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 var ejs = require('ejs');
 var indexRouter = require('./routes/index');
-
+var pg = require('pg');
 var app = express();
+
+var connectionString = 'postgres://' + process.env.POSTGRES_USER + ':' + process.env.POSTGRES_PASSWORD + '@localhost/bulletinboard';
+
+var client = new pg.Client(connectionString);
+client.connect();
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
