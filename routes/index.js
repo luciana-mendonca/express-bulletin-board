@@ -13,7 +13,7 @@ router.get('/', function(req, res) {
 
 router.post('/create', function(req, res) {
   client.query('INSERT INTO messages(title, body) VALUES($1, $2)', [req.body.addTitle, req.body.addMessage]);
-    res.redirect('/');
+    res.redirect('/messages');
 });
 
 //All Messages

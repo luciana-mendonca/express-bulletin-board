@@ -7,16 +7,15 @@
   <body>
     <%- include('layout'); -%>
     <div class="container">
-      <h1>All Messages</h1>
-      <div>
-        <div class="row message-box">
-          <% messages.forEach(function(data) { %>
-            <div class="col-md-5 col-md-offset-2">
-              <span class="title"><h2><%= data.title %></h2></span>
-              <p><%= data.body %></p>
-            </div>
-          <% }); %>
-        </div>
+      <span class="page-title"><h1>All Messages</h1></span>
+      <div class="row message-box">
+        <% messages.forEach(function(data) { %>
+          <div class="col-md-5 col-md-offset-2">
+            <img src="/public/images/pin.png" style="width:10%;">
+            <span class="title"><p><%= data.title %></p></span>
+            <p><%= data.body %></p>
+          </div>
+        <% }); %>
       </div>
     </div>
   </body>

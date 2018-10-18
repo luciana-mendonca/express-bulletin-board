@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Noto+Serif+KR|Oswald|Playfair+Display|Yesteryear');
+@import url('https://fonts.googleapis.com/css?family=Reenie+Beanie');
 
 body {
-  background-color: #b8bad6;
-  background-repeat: no-repeat;
+  background: url(/public/images/board.jpg) no-repeat center center fixed;
+  background-size: cover;
   font-family: 'Playfair Display', serif;
   color: #2E2E2E;
 }
@@ -15,7 +16,19 @@ h1 {
   margin-bottom: 30px;
 }
 
-/*Navbar*/
+.container {
+  min-width: 85%;
+}
+
+.page-title h1 {
+  text-align: center;
+  box-shadow:10px 10px 7px rgba(0,0,0,.7);
+  background-color: #feffca;
+  position:relative;
+  padding: 1%;
+  top: 20px;
+  bottom: 30px;
+}
 
 
 /*Form*/
@@ -24,31 +37,45 @@ label {
 }
 
 form {
-  box-shadow: 5px 5px 28px grey;
-  background-color: #fff;
+  box-shadow:10px 10px 7px rgba(0,0,0,.7);
+  background-color: #feffca;
   padding: 5%;
+  margin-top: 10%;
 }
 
 /*Messages*/
-.message-box div {
-  font-size: 1.4em;
-  background-color: #fff;
+
+.message-box div{
+  font-size: 2em;
+  font-family:"Reenie Beanie",arial,sans-serif;
+  background-color: #feffca;
   margin: 0 auto;
   margin-top: 3rem;
-  margin-bottom: 3rem;
-  padding: 4%;
+  margin-bottom: 20px;
+  padding: 20px;
   text-align: justify;
+  -o-transform:rotate(2deg);
+  -webkit-transform:rotate(2deg);
+  -moz-transform:rotate(2deg);
+  position:relative;
+  top:-10px;
+}
+
+.message-box div:hover{
+  box-shadow:10px 10px 7px rgba(0,0,0,.7);
+  -moz-box-shadow:10px 10px 7px rgba(0,0,0,.7);
+  -webkit-box-shadow: 10px 10px 7px rgba(0,0,0,.7);
+  -webkit-transform: scale(1.10);
+  -moz-transform: scale(1.10);
+  -o-transform: scale(1.10);
+  position:relative;
+  z-index:5;
 }
 
 .title {
-  font-size: 2rem;
+  font-size: 3rem;
   color: #624f9c;
-  margin-bottom: 2rem;
-}
-
-.message-box div:hover {
-  background-color: #bff0ef;
-  box-shadow: 5px 5px 28px gray;
+  margin-bottom: 3rem;
 }
 
 /*Buttons*/
