@@ -4,11 +4,12 @@ body {
   background-color: #b8bad6;
   background-repeat: no-repeat;
   font-family: 'Playfair Display', serif;
+  color: #2E2E2E;
 }
 
 h1 {
   font-family: 'Yesteryear', cursive;
-  color: #fff;
+  color: #2E2E2E;
   font-size: 5rem;
   margin-top: 30px;
   margin-bottom: 30px;
@@ -22,6 +23,12 @@ label {
   font-size: 1.3rem;
 }
 
+form {
+  box-shadow: 5px 5px 28px grey;
+  background-color: #fff;
+  padding: 5%;
+}
+
 /*Messages*/
 .message-box div {
   font-size: 1.4em;
@@ -29,8 +36,14 @@ label {
   margin: 0 auto;
   margin-top: 3rem;
   margin-bottom: 3rem;
-  padding: 5%;
-  text-align: center;
+  padding: 4%;
+  text-align: justify;
+}
+
+.title {
+  font-size: 2rem;
+  color: #624f9c;
+  margin-bottom: 2rem;
 }
 
 .message-box div:hover {
@@ -38,18 +51,12 @@ label {
   box-shadow: 5px 5px 28px gray;
 }
 
-/*.search-form {
-  margin: 0 auto;
-  margin-top: 20%;
-  width: 100%;
-}*/
-
 /*Buttons*/
 .btn-custom {
   width: 15%;
   font-size: 0.8rem;
   text-align: center;
-  background-color: #bdfbfe;
+  background-color: #b8bad6;
   border-color: transparent;
 }
 

@@ -12,10 +12,9 @@
         <div class="row message-box">
           <% messages.forEach(function(data) { %>
             <div class="col-md-5 col-md-offset-2">
-            // <img src='/public/images/user.png'>
-            <p><%= data.title %></p>
-            <br />
-            <p><%= data.body %></p>
+              <span class="title"><h2><%= data.title %></h2></span>
+              <p><%= data.body %></p>
+            </div>
           <% }); %>
         </div>
       </div>

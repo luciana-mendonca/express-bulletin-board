@@ -6,20 +6,24 @@ var connectionString = 'postgres://' + process.env.POSTGRES_USER + ':' + process
 var client = new pg.Client(connectionString);
 client.connect();
 
-/* GET home page. */
+// Index - Create Message
 router.get('/', function(req, res) {
   res.render('create');
+});
+
+router.post('/create', function(req, res) {
+  client.query('INSERT INTO messages(title, body) VALUES($1, $2)', [req.body.addTitle, req.body.addMessage]);
+    res.redirect('/');
 });
 
 //All Messages
 router.get('/messages', function(req, res){
   client.query('SELECT * FROM messages', function(err, result) {
     if(err) {
-      return console.error('Error returning query', err);
+      return console.log('Error returning query', err);
     }
-    console.log(result.rows);
     res.render('messages', {messages: result.rows});
-    client.end();
+    // client.end();
   });
 });
 
