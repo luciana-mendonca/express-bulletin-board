@@ -14,7 +14,16 @@ h1 {
   margin-bottom: 30px;
 }
 
-/*.user-box div {
+/*Navbar*/
+
+
+/*Form*/
+label {
+  font-size: 1.3rem;
+}
+
+/*Messages*/
+.message-box div {
   font-size: 1.4em;
   background-color: #fff;
   margin: 0 auto;
@@ -22,12 +31,12 @@ h1 {
   margin-bottom: 3rem;
   padding: 5%;
   text-align: center;
-}*/
+}
 
-/*.user-box div:hover {
+.message-box div:hover {
   background-color: #bff0ef;
   box-shadow: 5px 5px 28px gray;
-}*/
+}
 
 /*.search-form {
   margin: 0 auto;
@@ -35,8 +44,11 @@ h1 {
   width: 100%;
 }*/
 
+/*Buttons*/
 .btn-custom {
   width: 15%;
+  font-size: 0.8rem;
+  text-align: center;
   background-color: #bdfbfe;
   border-color: transparent;
 }

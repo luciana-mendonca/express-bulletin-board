@@ -9,7 +9,6 @@ var pg = require('pg');
 var app = express();
 
 var connectionString = 'postgres://' + process.env.POSTGRES_USER + ':' + process.env.POSTGRES_PASSWORD + '@localhost/bulletinboard';
-
 var client = new pg.Client(connectionString);
 client.connect();
 
